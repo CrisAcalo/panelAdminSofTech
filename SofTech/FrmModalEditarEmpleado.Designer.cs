@@ -187,6 +187,7 @@
             this.txtBxHorasTrabajo.Name = "txtBxHorasTrabajo";
             this.txtBxHorasTrabajo.Size = new System.Drawing.Size(580, 30);
             this.txtBxHorasTrabajo.TabIndex = 46;
+            this.txtBxHorasTrabajo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxHorasTrabajo_KeyPress);
             // 
             // label3
             // 
@@ -207,6 +208,7 @@
             this.txtBxPagoHora.Name = "txtBxPagoHora";
             this.txtBxPagoHora.Size = new System.Drawing.Size(580, 30);
             this.txtBxPagoHora.TabIndex = 44;
+            this.txtBxPagoHora.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxPagoHora_KeyPress);
             // 
             // label2
             // 
@@ -227,6 +229,7 @@
             this.txtBxCargo.Name = "txtBxCargo";
             this.txtBxCargo.Size = new System.Drawing.Size(580, 30);
             this.txtBxCargo.TabIndex = 42;
+            this.txtBxCargo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxCargo_KeyPress);
             // 
             // label1
             // 
@@ -247,6 +250,7 @@
             this.txtBxApellido.Name = "txtBxApellido";
             this.txtBxApellido.Size = new System.Drawing.Size(214, 30);
             this.txtBxApellido.TabIndex = 40;
+            this.txtBxApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxApellido_KeyPress);
             // 
             // lbApellido
             // 
@@ -268,6 +272,7 @@
             this.txtBxNombre.Name = "txtBxNombre";
             this.txtBxNombre.Size = new System.Drawing.Size(214, 30);
             this.txtBxNombre.TabIndex = 38;
+            this.txtBxNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxNombre_KeyPress);
             // 
             // lbNombre
             // 
@@ -292,7 +297,7 @@
             this.lb_bienvenida.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lb_bienvenida.Location = new System.Drawing.Point(75, 37);
             this.lb_bienvenida.Name = "lb_bienvenida";
-            this.lb_bienvenida.Size = new System.Drawing.Size(171, 34);
+            this.lb_bienvenida.Size = new System.Drawing.Size(170, 33);
             this.lb_bienvenida.TabIndex = 36;
             this.lb_bienvenida.Text = "Empleado";
             this.lb_bienvenida.TextAlign = System.Drawing.ContentAlignment.TopCenter;

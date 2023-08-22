@@ -96,7 +96,6 @@ namespace Sudoku_GUI
 
         private void DeleteRowWithSelectedEmpleado(Empleado empleado)
         {
-            lbPruebaEmpleadoSeleccionado2.Text = empleado.Apellido.ToString();
 
             DialogResult result = MessageBox.Show("¿Está seguro de eliminar al empleado "+empleado.Nombre+" de código "+empleado.Codigo+"?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
             if (result == DialogResult.OK)

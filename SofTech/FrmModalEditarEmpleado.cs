@@ -154,5 +154,48 @@ namespace Sudoku_GUI
                 }
             }
         }
+
+        private void txtBxNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si la tecla presionada es una letra (mayúscula o minúscula)
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Ignora la tecla presionada si no es una letra o una tecla de control
+            }
+        }
+
+        private void txtBxApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si la tecla presionada es una letra (mayúscula o minúscula)
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Ignora la tecla presionada si no es una letra o una tecla de control
+            }
+        }
+
+        private void txtBxCargo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si la tecla presionada es una letra (mayúscula o minúscula)
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Ignora la tecla presionada si no es una letra o una tecla de control
+            }
+        }
+
+        private void txtBxPagoHora_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Cancelar el evento si no es un número o control
+            }
+        }
+
+        private void txtBxHorasTrabajo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Cancelar el evento si no es un número o control
+            }
+        }
     }
 }

@@ -128,6 +128,7 @@
             this.txtBxNombre.Name = "txtBxNombre";
             this.txtBxNombre.Size = new System.Drawing.Size(214, 30);
             this.txtBxNombre.TabIndex = 10;
+            this.txtBxNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxNombre_KeyPress);
             // 
             // txtBxApellido
             // 
@@ -136,6 +137,7 @@
             this.txtBxApellido.Name = "txtBxApellido";
             this.txtBxApellido.Size = new System.Drawing.Size(214, 30);
             this.txtBxApellido.TabIndex = 12;
+            this.txtBxApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxApellido_KeyPress);
             // 
             // lbApellido
             // 
@@ -156,6 +158,7 @@
             this.txtBxCargo.Name = "txtBxCargo";
             this.txtBxCargo.Size = new System.Drawing.Size(580, 30);
             this.txtBxCargo.TabIndex = 14;
+            this.txtBxCargo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBxCargo_KeyPress);
             // 
             // label1
             // 
