@@ -1,0 +1,16 @@
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\bin\Debug\Sudoku_GUI.exe.config
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\bin\Debug\Sudoku_GUI.exe
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\bin\Debug\Sudoku_GUI.pdb
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\SofTech.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\SofTech.csproj.SuggestedBindingRedirects.cache
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\Sudoku_GUI.FormPrincipal.resources
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\Sudoku_GUI.FormInicial.resources
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\Sudoku_GUI.ModalForm.resources
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\Sudoku_GUI.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\SofTech.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\SofTech.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\Sudoku_GUI.exe
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\Sudoku_GUI.pdb
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\Sudoku_GUI.frmVerEmpleados.resources
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\Sudoku_GUI.FrmModalEditarEmpleado.resources
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\Sudoku_GUI\obj\Debug\Sudoku_GUI.FrmEditEmpleado.resources
