@@ -1,5 +1,4 @@
 984540,acsdc,B,casc,22,1
-104558,a,s,d,2,12
 554902,dfgh,Cruz,xd,20,8
 397795,Pedro,Pablo,xdd,40,4
 765010,Juan,Pedro,dx,50,10
