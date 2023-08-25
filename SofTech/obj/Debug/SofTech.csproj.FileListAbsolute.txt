@@ -22,11 +22,11 @@ C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofT
 C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\obj\Debug\Sudoku_GUI.FrmModalEditarEmpleado.resources
 C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\obj\Debug\Sudoku_GUI.frmVerEmpleados.resources
 C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\obj\Debug\Sudoku_GUI.ModalForm.resources
-C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\obj\Debug\Sudoku_GUI.Properties.Resources.resources
 C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\obj\Debug\SofTech.csproj.GenerateResource.cache
 C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\obj\Debug\SofTech.csproj.CoreCompileInputs.cache
-C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\obj\Debug\Sudoku_GUI.exe
-C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\obj\Debug\Sudoku_GUI.pdb
-C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\bin\Debug\Sudoku_GUI.exe.config
-C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\bin\Debug\Sudoku_GUI.exe
-C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\bin\Debug\Sudoku_GUI.pdb
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\obj\Debug\SofTech.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\bin\Debug\SofTech.exe.config
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\bin\Debug\SofTech.exe
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\bin\Debug\SofTech.pdb
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\obj\Debug\SofTech.exe
+C:\Users\USUARIO\Desktop\Uni\III\Estructura de Datos\Repositorios\panelAdminSofTech\SofTech\obj\Debug\SofTech.pdb

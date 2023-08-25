@@ -156,6 +156,7 @@ namespace Sudoku_GUI
                 .ToList();
 
                 tbDatosEmpleados.DataSource = searchResults;
+
             }
             else if (!string.IsNullOrEmpty(opcionSeleccionada) && !string.IsNullOrEmpty(searchTerm))
             {
@@ -388,6 +389,38 @@ namespace Sudoku_GUI
             cmbBxParametro.Select();
             txtBuscar.Text = "";
             tbDatosEmpleados.DataSource = dataList;
+        }
+
+        private void btnEliminarDatos_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("¿Está seguro de eliminar todos los datos?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+            if (result == DialogResult.OK)
+            {
+                FormPrincipal.empleados.Clear();
+                FormPrincipal.tablaHash.Clear();
+                dataList.Clear();
+                ActualizarArchivoDeTexto();
+                // Cerrar y eliminar el formulario actual (si existe)
+                if (formPrincipalIns.panelFormularios.Controls.Count > 0)
+                {
+                    var currentForm = formPrincipalIns.panelFormularios.Controls[0] as Form;
+                    currentForm.Close();
+                    formPrincipalIns.panelFormularios.Controls.Clear();
+                }
+
+                // Crear una nueva instancia del formulario recibido como parámetro
+                Form formulario = new frmVerEmpleados(formPrincipalIns);
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                formPrincipalIns.panelFormularios.Controls.Add(formulario);
+                formPrincipalIns.panelFormularios.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+
+                MessageBox.Show("Los datos se han eliminado exitosamente", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         public void ActualizarArchivoDeTexto()

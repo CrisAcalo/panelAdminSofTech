@@ -236,28 +236,28 @@ namespace Sudoku_GUI
 
         private void txtBxNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Verifica si la tecla presionada es una letra (mayúscula o minúscula)
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            // Verificar si la tecla ingresada es una letra o un espacio
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '\b') // '\b' representa la tecla de retroceso
             {
-                e.Handled = true; // Ignora la tecla presionada si no es una letra o una tecla de control
+                e.Handled = true; // Bloquear la tecla
             }
         }
 
         private void txtBxApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Verifica si la tecla presionada es una letra (mayúscula o minúscula)
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            // Verificar si la tecla ingresada es una letra o un espacio
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '\b') // '\b' representa la tecla de retroceso
             {
-                e.Handled = true; // Ignora la tecla presionada si no es una letra o una tecla de control
+                e.Handled = true; // Bloquear la tecla
             }
         }
 
         private void txtBxCargo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Verifica si la tecla presionada es una letra (mayúscula o minúscula)
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            // Verificar si la tecla ingresada es una letra o un espacio
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '\b') // '\b' representa la tecla de retroceso
             {
-                e.Handled = true; // Ignora la tecla presionada si no es una letra o una tecla de control
+                e.Handled = true; // Bloquear la tecla
             }
         }
     }

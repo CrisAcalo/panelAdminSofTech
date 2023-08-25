@@ -1,5 +1,23 @@
-984540,acsdc,B,casc,22,1
-554902,dfgh,Cruz,xd,20,8
-397795,Pedro,Pablo,xdd,40,4
-776508,Prueba,1,csdc,100,100
-765010,Juan,Pedro,dx,50,10222
+642359,Antonio,Castro,Ventas,20,8
+438901,Roberto,Chavez,Marketing,35,6
+456789,Sofia,Fernandez,Ingeniería,28,7
+765010,Cristian,Garcia,Marketing,40,9
+123456,Alicia,García,Marketing,40,7
+543210,Pablo,Gonzalez,Desarrollo,32,8
+975318,Julia,Guerrero,Programación,42,8
+876543,Laura,Hernandez,Marketing,38,8
+780124,Mariana,Jimenez,Desarrollo,28,8
+345678,Ana,Lopez,Recursos Humanos,20,8
+654321,Elena,Martinez,Ventas,22,8
+789012,Luis,Mendoza,Ventas,25,8
+802467,Isabel,Navarro,Recursos Humanos,18,8
+519273,Andres,Ortega,Contabilidad,16,8
+111213,Manuel,Perez,Ingeniería,23,7
+890123,Carlos,Perez,Diseño,30,6
+908172,Pedro,Ramirez,Recursos Humanos,16,8
+901234,Daniel,Ramirez,Contabilidad,18,8
+306611,Diego,Ramirez,Diseño,30,5
+246801,Valeria,Rivera,Ingeniería,25,8
+234567,Maria,Rodriguez,Desarrollo,35,8
+210987,Miguel,Torres,Programación,45,8
+187263,Sara,Vargas,Diseño,28,5

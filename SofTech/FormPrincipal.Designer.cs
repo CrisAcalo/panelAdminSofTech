@@ -39,11 +39,11 @@
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panelContenedor.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.panelWithBorder1.SuspendLayout();
@@ -97,6 +97,7 @@
             this.btnImportarDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
             this.btnImportarDatos.BackgroundColorOnEnter = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(225)))), ((int)(((byte)(218)))));
             this.btnImportarDatos.BackgroundColorOnLeave = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.btnImportarDatos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImportarDatos.FlatAppearance.BorderSize = 0;
             this.btnImportarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportarDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -116,12 +117,13 @@
             this.btnVer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
             this.btnVer.BackgroundColorOnEnter = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(218)))));
             this.btnVer.BackgroundColorOnLeave = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.btnVer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVer.FlatAppearance.BorderSize = 0;
             this.btnVer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVer.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(225)))), ((int)(((byte)(218)))));
             this.btnVer.ForegroundColorOnEnter = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
-            this.btnVer.ForegroundColorOnLeave = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(218)))));
+            this.btnVer.ForegroundColorOnLeave = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(225)))), ((int)(((byte)(218)))));
             this.btnVer.Location = new System.Drawing.Point(0, 333);
             this.btnVer.Name = "btnVer";
             this.btnVer.Size = new System.Drawing.Size(250, 60);
@@ -145,11 +147,12 @@
             this.label_principal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label_principal.AutoSize = true;
+            this.label_principal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label_principal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label_principal.Font = new System.Drawing.Font("Hotel De Paris", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_principal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(225)))), ((int)(((byte)(218)))));
             this.label_principal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label_principal.Location = new System.Drawing.Point(11, 11);
+            this.label_principal.Location = new System.Drawing.Point(12, 9);
             this.label_principal.Name = "label_principal";
             this.label_principal.Size = new System.Drawing.Size(130, 94);
             this.label_principal.TabIndex = 1;
@@ -160,6 +163,7 @@
             // btnModal
             // 
             this.btnModal.BackColor = System.Drawing.Color.Transparent;
+            this.btnModal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModal.FlatAppearance.BorderSize = 0;
             this.btnModal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnModal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(225)))), ((int)(((byte)(218)))));
@@ -214,11 +218,15 @@
             this.label1.Text = "SofTech";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // btnMaximizar
             // 
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.Image = global::Sudoku_GUI.Properties.Resources.minimizar_2_16;
+            this.btnMaximizar.Image = global::SofTech.Properties.Resources.minimizar_2_16;
             this.btnMaximizar.Location = new System.Drawing.Point(1408, 7);
             this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMaximizar.Name = "btnMaximizar";
@@ -231,7 +239,7 @@
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = global::Sudoku_GUI.Properties.Resources.menos_2_16;
+            this.btnMinimizar.Image = global::SofTech.Properties.Resources.menos_2_16;
             this.btnMinimizar.Location = new System.Drawing.Point(1363, 6);
             this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimizar.Name = "btnMinimizar";
@@ -244,7 +252,7 @@
             // 
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Image = global::Sudoku_GUI.Properties.Resources.minimizar_2_16;
+            this.btnRestaurar.Image = global::SofTech.Properties.Resources.minimizar_2_16;
             this.btnRestaurar.Location = new System.Drawing.Point(1408, 6);
             this.btnRestaurar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRestaurar.Name = "btnRestaurar";
@@ -257,7 +265,7 @@
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.Image = global::Sudoku_GUI.Properties.Resources.close1;
+            this.btnCerrar.Image = global::SofTech.Properties.Resources.close1;
             this.btnCerrar.Location = new System.Drawing.Point(1448, 7);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
@@ -265,10 +273,6 @@
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // FormPrincipal
             // 
@@ -308,9 +312,9 @@
         private System.Windows.Forms.Panel panel1;
         private PanelWithBorder panelWithBorder1;
         private buttonTemplate btnVer;
-        public System.Windows.Forms.Panel panelFormularios;
         private buttonTemplate btnImportarDatos;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        public System.Windows.Forms.Panel panelFormularios;
     }
 }
 

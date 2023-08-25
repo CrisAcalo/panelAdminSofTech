@@ -19,13 +19,13 @@ namespace Sudoku_GUI
         static Random random = new Random();
 
         private Empleado empleadoIns;
-        public FrmModalEditarEmpleado(FormPrincipal formPrincipal,frmVerEmpleados formVerEmpleados,Empleado empleado)
+        public FrmModalEditarEmpleado(FormPrincipal formPrincipal, frmVerEmpleados formVerEmpleados, Empleado empleado)
         {
             InitializeComponent();
             formPrincipalIns = formPrincipal;
 
             formVerEmpleadosIns = formVerEmpleados;
-            lb_bienvenida.Text = "Hola "+empleado.Nombre.ToString()+"!";
+            lb_bienvenida.Text = "Hola " + empleado.Nombre.ToString() + "!";
             txtBxNombre.Text = empleado.Nombre.ToString();
             txtBxApellido.Text = empleado.Apellido.ToString();
             txtBxCargo.Text = empleado.Cargo.ToString();
@@ -87,48 +87,91 @@ namespace Sudoku_GUI
                 double horasTrabajadas = Double.Parse(txtBxHorasTrabajo.Text);
 
                 Empleado empleado = BuscarEmpleadoPorCodigo(empleadoIns.Codigo);
+                Empleado editedEmpleado = new Empleado(empleado.Codigo, nombre, apellido, cargo, pagoPorHora, horasTrabajadas);
                 //frmVerEmpleados frmVer = new frmVerEmpleados(formPrincipalIns);
-
+                
                 if (empleado != null)
                 {
-                    empleado.Nombre = nombre;
-                    empleado.Apellido = apellido;
-                    empleado.Cargo = cargo;
-                    empleado.PagoPorHora = pagoPorHora;
-                    empleado.HorasTrabajadas = horasTrabajadas;
-                    empleado.SueldoTotal = empleado.CalcularSueldoTotal();
-
-                    this.Close();
-
-                    MessageBox.Show("El empleado ha sido acatualizado exitosamente", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    // Actualizar el archivo de texto
-                    ActualizarArchivoDeTexto();
-                    //formPrincipalIns.AbrirFormulario<frmVerEmpleados>(formPrincipalIns);
-
-                    // Cerrar y eliminar el formulario actual (si existe)
-                    if (formPrincipalIns.panelFormularios.Controls.Count > 0)
+                    if (formPrincipalIns.EmpleadoYaRegistrado(editedEmpleado))
                     {
-                        var currentForm = formPrincipalIns.panelFormularios.Controls[0] as Form;
-                        currentForm.Close();
-                        formPrincipalIns.panelFormularios.Controls.Clear();
-                    }
+                        DialogResult result = MessageBox.Show("Ya existe un empleado con datos similares", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                        if (result == DialogResult.OK)
+                        {
+                            empleado.Nombre = nombre;
+                            empleado.Apellido = apellido;
+                            empleado.Cargo = cargo;
+                            empleado.PagoPorHora = pagoPorHora;
+                            empleado.HorasTrabajadas = horasTrabajadas;
+                            empleado.SueldoTotal = empleado.CalcularSueldoTotal();
 
-                    // Crear una nueva instancia del formulario recibido como parámetro
-                    Form formulario = new frmVerEmpleados(formPrincipalIns);
-                    formulario.TopLevel = false;
-                    formulario.FormBorderStyle = FormBorderStyle.None;
-                    formulario.Dock = DockStyle.Fill;
-                    formPrincipalIns.panelFormularios.Controls.Add(formulario);
-                    formPrincipalIns.panelFormularios.Tag = formulario;
-                    formulario.Show();
-                    formulario.BringToFront();
+                            this.Close();
+
+                            MessageBox.Show("El empleado ha sido acatualizado exitosamente", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            // Actualizar el archivo de texto
+                            ActualizarArchivoDeTexto();
+                            //formPrincipalIns.AbrirFormulario<frmVerEmpleados>(formPrincipalIns);
+
+                            // Cerrar y eliminar el formulario actual (si existe)
+                            if (formPrincipalIns.panelFormularios.Controls.Count > 0)
+                            {
+                                var currentForm = formPrincipalIns.panelFormularios.Controls[0] as Form;
+                                currentForm.Close();
+                                formPrincipalIns.panelFormularios.Controls.Clear();
+                            }
+
+                            // Crear una nueva instancia del formulario recibido como parámetro
+                            Form formulario = new frmVerEmpleados(formPrincipalIns);
+                            formulario.TopLevel = false;
+                            formulario.FormBorderStyle = FormBorderStyle.None;
+                            formulario.Dock = DockStyle.Fill;
+                            formPrincipalIns.panelFormularios.Controls.Add(formulario);
+                            formPrincipalIns.panelFormularios.Tag = formulario;
+                            formulario.Show();
+                            formulario.BringToFront();
+                        }
+                    }
+                    else
+                    {
+                        empleado.Nombre = nombre;
+                        empleado.Apellido = apellido;
+                        empleado.Cargo = cargo;
+                        empleado.PagoPorHora = pagoPorHora;
+                        empleado.HorasTrabajadas = horasTrabajadas;
+                        empleado.SueldoTotal = empleado.CalcularSueldoTotal();
+
+                        this.Close();
+
+                        MessageBox.Show("El empleado ha sido acatualizado exitosamente", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Actualizar el archivo de texto
+                        ActualizarArchivoDeTexto();
+                        //formPrincipalIns.AbrirFormulario<frmVerEmpleados>(formPrincipalIns);
+
+                        // Cerrar y eliminar el formulario actual (si existe)
+                        if (formPrincipalIns.panelFormularios.Controls.Count > 0)
+                        {
+                            var currentForm = formPrincipalIns.panelFormularios.Controls[0] as Form;
+                            currentForm.Close();
+                            formPrincipalIns.panelFormularios.Controls.Clear();
+                        }
+
+                        // Crear una nueva instancia del formulario recibido como parámetro
+                        Form formulario = new frmVerEmpleados(formPrincipalIns);
+                        formulario.TopLevel = false;
+                        formulario.FormBorderStyle = FormBorderStyle.None;
+                        formulario.Dock = DockStyle.Fill;
+                        formPrincipalIns.panelFormularios.Controls.Add(formulario);
+                        formPrincipalIns.panelFormularios.Tag = formulario;
+                        formulario.Show();
+                        formulario.BringToFront();
+                    }
+                    
                 }
                 else
                 {
                     MessageBox.Show("Todos los campos son obligatorios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            
+
         }
 
         static Empleado BuscarEmpleadoPorCodigo(int codigo)
@@ -157,28 +200,28 @@ namespace Sudoku_GUI
 
         private void txtBxNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Verifica si la tecla presionada es una letra (mayúscula o minúscula)
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            // Verificar si la tecla ingresada es una letra o un espacio
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '\b') // '\b' representa la tecla de retroceso
             {
-                e.Handled = true; // Ignora la tecla presionada si no es una letra o una tecla de control
+                e.Handled = true; // Bloquear la tecla
             }
         }
 
         private void txtBxApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Verifica si la tecla presionada es una letra (mayúscula o minúscula)
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            // Verificar si la tecla ingresada es una letra o un espacio
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '\b') // '\b' representa la tecla de retroceso
             {
-                e.Handled = true; // Ignora la tecla presionada si no es una letra o una tecla de control
+                e.Handled = true; // Bloquear la tecla
             }
         }
 
         private void txtBxCargo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Verifica si la tecla presionada es una letra (mayúscula o minúscula)
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            // Verificar si la tecla ingresada es una letra o un espacio
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != ' ' && e.KeyChar != '\b') // '\b' representa la tecla de retroceso
             {
-                e.Handled = true; // Ignora la tecla presionada si no es una letra o una tecla de control
+                e.Handled = true; // Bloquear la tecla
             }
         }
 

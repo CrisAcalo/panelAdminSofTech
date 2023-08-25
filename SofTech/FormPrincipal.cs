@@ -36,11 +36,20 @@ namespace Sudoku_GUI
         {
             CargarDatosDesdeArchivo();
             InitializeComponent();
-            //InitializeButtonEvents();
 
             this.StartPosition = FormStartPosition.CenterScreen;
             this.BackColor = Color.White;
-
+            // Crear y mostrar una nueva instancia del formulario
+            
+            //Mostrar Logo y Formulario de inicio
+            Form formulario = new FormInicial();
+            formulario.TopLevel = false;
+            formulario.FormBorderStyle = FormBorderStyle.None;
+            formulario.Dock = DockStyle.Fill;
+            panelFormularios.Controls.Add(formulario);
+            panelFormularios.Tag = formulario;
+            formulario.Show();
+            formulario.BringToFront();
         }
 
 
@@ -108,34 +117,42 @@ namespace Sudoku_GUI
                                     if (parts.Length == 6)
                                     {
                                         int codigo;
-                                        if (int.TryParse(parts[0], out codigo) && !tablaHash.ContainsKey(codigo))
+                                        if (int.TryParse(parts[0], out codigo))
                                         {
-                                            string nombre = parts[1];
-                                            string apellido = parts[2];
-                                            string cargo = parts[3];
-                                            double pagoPorHora;
-                                            if (double.TryParse(parts[4], out pagoPorHora))
+                                            if (!tablaHash.ContainsKey(codigo))
                                             {
-                                                double horasTrabajadas;
-                                                if (double.TryParse(parts[5], out horasTrabajadas))
+                                                string nombre = parts[1];
+                                                string apellido = parts[2];
+                                                string cargo = parts[3];
+                                                double pagoPorHora;
+                                                if (double.TryParse(parts[4], out pagoPorHora))
                                                 {
+                                                    double horasTrabajadas;
+                                                    if (double.TryParse(parts[5], out horasTrabajadas))
+                                                    {
 
-                                                    empleados.Add(new Empleado(codigo, nombre, apellido, cargo, pagoPorHora, horasTrabajadas));
-                                                    tablaHash[codigo] = empleados[empleados.Count - 1]; // Agregar al diccionario
+                                                        empleados.Add(new Empleado(codigo, nombre, apellido, cargo, pagoPorHora, horasTrabajadas));
+                                                        tablaHash[codigo] = empleados[empleados.Count - 1]; // Agregar al diccionario
+                                                    }
+                                                    else
+                                                    {
+                                                        MessageBox.Show("Error en el formato de las horas trabajadas en la línea: " + line, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                    }
                                                 }
                                                 else
                                                 {
-                                                    MessageBox.Show("Error en el formato de las horas trabajadas en la línea: " + line, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                    MessageBox.Show("Error en el formato del pago por hora en la línea: " + line, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                                 }
                                             }
                                             else
                                             {
-                                                MessageBox.Show("Error en el formato del pago por hora en la línea: " + line, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                MessageBox.Show("El código de empleado de la línea: " + line + " ya existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                             }
+                                            
                                         }
                                         else
                                         {
-                                            MessageBox.Show("El código de empleado de la línea: " + line + " ya existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                            MessageBox.Show("Error en el formato del código en la línea: " + line, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                         }
                                     }
                                     else
@@ -261,7 +278,7 @@ namespace Sudoku_GUI
 
         private void label_principal_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario<FormInicial>();
         }
 
         private void btnModal_MouseEnter(object sender, EventArgs e)
@@ -355,27 +372,6 @@ namespace Sudoku_GUI
             }
 
             // Crear y mostrar una nueva instancia del formulario
-            Form formulario = new MiForm();
-            formulario.TopLevel = false;
-            formulario.FormBorderStyle = FormBorderStyle.None;
-            formulario.Dock = DockStyle.Fill;
-            panelFormularios.Controls.Add(formulario);
-            panelFormularios.Tag = formulario;
-            formulario.Show();
-            formulario.BringToFront();
-        }
-
-        public void AbrirFormulario<MiForm>(Form formParametro) where MiForm : Form, new()
-        {
-            // Cerrar y eliminar el formulario actual (si existe)
-            if (panelFormularios.Controls.Count > 0)
-            {
-                var currentForm = panelFormularios.Controls[0] as Form;
-                currentForm.Close();
-                panelFormularios.Controls.Clear();
-            }
-
-            // Crear una nueva instancia del formulario recibido como parámetro
             Form formulario = new MiForm();
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;

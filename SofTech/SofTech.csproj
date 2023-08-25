@@ -6,12 +6,27 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9C601989-F388-4DE4-85EA-A161A88D5455}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Sudoku_GUI</RootNamespace>
-    <AssemblyName>Sudoku_GUI</AssemblyName>
+    <RootNamespace>SofTech</RootNamespace>
+    <AssemblyName>SofTech</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +46,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>think_idea_work_mind_thinking_icon_192534.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -158,6 +176,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minimizar_2_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\certified-big-data-engineer-1657623430377.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerebro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerebro2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerebro_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subir_24.png" />
+    <None Include="Resources\agregar-usuario_24.png" />
+    <Content Include="think_idea_work_mind_thinking_icon_192534.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

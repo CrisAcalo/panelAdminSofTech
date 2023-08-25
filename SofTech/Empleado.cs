@@ -29,7 +29,7 @@ namespace Sudoku_GUI
 
         public double CalcularSueldoTotal()
         {
-            return PagoPorHora * HorasTrabajadas;
+            return PagoPorHora * HorasTrabajadas *20;
         }
 
         public override string ToString()

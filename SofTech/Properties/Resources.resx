@@ -118,11 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="minimizar-pestana_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimizar-pestana_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cerebro2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerebro2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cuadricula_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cuadricula_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cerebro_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerebro_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menos_2_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menos_2_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimizar-pestana_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimizar-pestana_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="certified-big-data-engineer-1657623430377" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\certified-big-data-engineer-1657623430377.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cerca_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cerca_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,16 +148,19 @@
   <data name="cuadricula_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cuadricula_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="minimizar_2_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimizar_2_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subir_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subir_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cerebro1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerebro1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="menos_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menos_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menos_2_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menos_2_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cuadricula_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cuadricula_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimizar_2_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimizar_2_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="agregar-usuario_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agregar-usuario_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
